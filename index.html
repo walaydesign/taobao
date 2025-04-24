@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘寶運動分析網</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header_nav">
+            <ul>
+                <li>
+                    <a href="./index.html" class="header_nav_item active">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/home.svg" alt="">
+                            <img class="icon-active" src="./public/img/home-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">回首頁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./news.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/announce.svg" alt="">
+                            <img class="icon-active" src="./public/img/announce-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">最新消息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./hot.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/hot.svg" alt="">
+                            <img class="icon-active" src="./public/img/hot-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">熱門方案</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./buy.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/buy.svg" alt="">
+                            <img class="icon-active" src="./public/img/buy-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">儲值購買</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./flow.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/process.svg" alt="">
+                            <img class="icon-active" src="./public/img/process-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">購買流程</span>
+                    </a>
+                </li>
+                <li class="d-lg-none">
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-login">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/login.svg" alt="">
+                            <img class="icon-active" src="./public/img/login-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員登入</span>
+                    </a>
+                </li>
+                <li class="d-lg-none">
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-signup">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/user.svg" alt="">
+                            <img class="icon-active" src="./public/img/user-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員註冊</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header_nav d-lg-block d-none">
+            <ul>
+                <li>
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-login">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/login.svg" alt="">
+                            <img class="icon-active" src="./public/img/login-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員登入</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-signup">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/user.svg" alt="">
+                            <img class="icon-active" src="./public/img/user-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員註冊</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_menu d-lg-none">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="banner_border">
+                    <div class="banner_main">
+                        <img class="banner_bg" src="./public/img/banner.png" alt="">
+                        <div class="banner_text" data-aos="zoom-in" data-aos-duration="800">
+                            <img src="./public/img/banner-text.png" alt="">
+                        </div>
+                        <div class="banner_logo" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+                            <img src="./public/img/banner-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap mainContent home-content">
+            <div class="mainbar">
+                <ul class="nav nav-tabs analyze-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="spill-tab" data-bs-toggle="tab" data-bs-target="#spill-tab-pane" type="button" role="tab" aria-controls="spill-tab-pane" aria-selected="true">
+                            <span>爆料分析</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mlb-tab" data-bs-toggle="tab" data-bs-target="#mlb-tab-pane" type="button" role="tab" aria-controls="mlb-tab-pane" aria-selected="true">
+                            <span>美棒</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="hockey-tab" data-bs-toggle="tab" data-bs-target="#hockey-tab-pane" type="button" role="tab" aria-controls="hockey-tab-pane" aria-selected="true">
+                            <span>冰球</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="basketball-tab" data-bs-toggle="tab" data-bs-target="#basketball-tab-pane" type="button" role="tab" aria-controls="basketball-tab-pane" aria-selected="true">
+                            <span>籃球</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cpbl-tab" data-bs-toggle="tab" data-bs-target="#cpbl-tab-pane" type="button" role="tab" aria-controls="cpbl-tab-pane" aria-selected="true">
+                            <span>台棒</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="japan-tab" data-bs-toggle="tab" data-bs-target="#japan-tab-pane" type="button" role="tab" aria-controls="japan-tab-pane" aria-selected="true">
+                            <span>日棒</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="korea-tab" data-bs-toggle="tab" data-bs-target="#korea-tab-pane" type="button" role="tab" aria-controls="korea-tab-pane" aria-selected="true">
+                            <span>韓棒</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="analyze mainContent_wrapper">
+                    <div class="mainContent_inner">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="spill-tab-pane" role="tabpanel" aria-labelledby="spill-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="mlb-tab-pane" role="tabpanel" aria-labelledby="mlb-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="hockey-tab-pane" role="tabpanel" aria-labelledby="hockey-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="basketball-tab-pane" role="tabpanel" aria-labelledby="basketball-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="cpbl-tab-pane" role="tabpanel" aria-labelledby="cpbl-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="korea-tab-pane" role="tabpanel" aria-labelledby="korea-tab" tabindex="0">
+                                <div class="title">
+                                    <div class="title_icon">
+                                        <img class="layer-1" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-2" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-3" src="./public/img/competition-brightpurple.svg" alt="">
+                                        <img class="layer-4" src="./public/img/competition-neon.svg" alt="">
+                                    </div>
+                                    <div class="title_text">
+                                        <p class="layer-1">最新賽事</p>
+                                        <p class="layer-2">最新賽事</p>
+                                        <p class="layer-3">最新賽事</p>
+                                        <h1 class="layer-4">最新賽事</h1>
+                                    </div>
+                                </div>
+                                <div class="analyze_tabContent">
+                                    <table class="table-common">
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>讓分</th>
+                                            <th>盤口</th>
+                                            <th>受分</th>
+                                            <th>推薦</th>
+                                            <th>比分</th>
+                                            <th>賽果</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/win.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/walk.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/lose.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025-03-05</td>
+                                            <td>教士</td>
+                                            <td class="color-yellow">1+15</td>
+                                            <td>運動家</td>
+                                            <td><a class="table-common_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請先登入</a></td>
+                                            <td>-:-</td>
+                                            <td><img class="table-common_result" src="./public/img/wait.svg" alt=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="me-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="active"><span>1</span></a></li>
+                                    <li><a href=""><span>2</span></a></li>
+                                    <li><a href=""><span>3</span></a></li>
+                                    <li><a href=""><span>4</span></a></li>
+                                    <li><a href=""><span>5</span></a></li>
+                                    <li class="ms-3">
+                                        <a href="" class="pagination_arrow">
+                                            <img src="./public/img/chevron-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="row">
+                    <div class="col-lg-12 col-md-4">
+                        <div class="sidebar_item sidebar_qrcode">
+                            <img src="./public/img/line.jpg" alt="">
+                            <p>taobao2018777</p>
+                        </div>
+                        <div class="sidebar_item">
+                            <img src="./public/img/ad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-8">
+                        <div class="sidebar_item sidebar_news">
+                            <div class="sidebar_news_title">
+                                <h2>最新消息</h2>
+                            </div>
+                            <div class="sidebar_news_main">
+                                <a href="./news-detail.html" class="sidebar_news_item">
+                                    淘寶運彩俱樂部-日職／阪神簽韓職20勝強投 與殷仔組「2億日圓」連線
+                                </a>
+                                <a href="./news-detail.html" class="sidebar_news_item">
+                                    淘寶運彩俱樂部-日職／阪神簽韓職20勝強投 與殷仔組「2億日圓」連線
+                                </a>
+                                <a href="./news-detail.html" class="sidebar_news_item">
+                                    淘寶運彩俱樂部-日職／阪神簽韓職20勝強投 與殷仔組「2億日圓」連線
+                                </a>
+                                <a href="./news-detail.html" class="sidebar_news_item">
+                                    淘寶運彩俱樂部-日職／阪神簽韓職20勝強投 與殷仔組「2億日圓」連線
+                                </a>
+                                <a href="./news-detail.html" class="sidebar_news_item">
+                                    淘寶運彩俱樂部-日職／阪神簽韓職20勝強投 與殷仔組「2億日圓」連線
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Copyright © 2025 淘寶運動分析網 all rights reserved.
+    </footer>
+
+    <div class="modal fade modal-member" id="modal-login" tabindex="-1" aria-labelledby="modal-loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content_inner">
+                    <div class="modal-body">
+                        <button class="modal-member_x" data-bs-dismiss="modal">
+                            <div class="modal-member_x_inner">
+                                <img src="./public/img/x.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="title">
+                            <div class="title_icon">
+                                <img class="layer-1" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-2" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-3" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-4" src="./public/img/login-neon.svg" alt="">
+                            </div>
+                            <div class="title_text">
+                                <p class="layer-1">會員登入</p>
+                                <p class="layer-2">會員登入</p>
+                                <p class="layer-3">會員登入</p>
+                                <h1 class="layer-4">會員登入</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="帳號">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="密碼">
+                            </div>
+                        </div>
+                        <button class="btn-common">
+                            <span>登入</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-member" id="modal-signup" tabindex="-1" aria-labelledby="modal-signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content_inner">
+                    <div class="modal-body">
+                        <button class="modal-member_x" data-bs-dismiss="modal">
+                            <div class="modal-member_x_inner">
+                                <img src="./public/img/x.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="title">
+                            <div class="title_icon">
+                                <img class="layer-1" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-2" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-3" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-4" src="./public/img/user-neon.svg" alt="">
+                            </div>
+                            <div class="title_text">
+                                <p class="layer-1">會員註冊</p>
+                                <p class="layer-2">會員註冊</p>
+                                <p class="layer-3">會員註冊</p>
+                                <h1 class="layer-4">會員註冊</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="會員帳號">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="會員密碼">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="密碼確認">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="會員暱稱">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="email" placeholder="會員信箱">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="聯絡電話">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="LINE ID">
+                            </div>
+                            <div class="modal-member_checkbox">
+                                <input type="checkbox" id="consent">
+                                <label for="consent">同意<a href="./term.html">會員條款</a></label>
+                            </div>
+                        </div>
+                        <button class="btn-common">
+                            <span>註冊</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+
+</body>
+</html>

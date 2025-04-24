@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘寶運動分析網</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <ul>
+                <li>
+                    <a href="./index.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/home.svg" alt="">
+                            <img class="icon-active" src="./public/img/home-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">回首頁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./news.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/announce.svg" alt="">
+                            <img class="icon-active" src="./public/img/announce-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">最新消息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./hot.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/hot.svg" alt="">
+                            <img class="icon-active" src="./public/img/hot-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">熱門方案</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./buy.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/buy.svg" alt="">
+                            <img class="icon-active" src="./public/img/buy-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">儲值購買</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./flow.html" class="header_nav_item">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/process.svg" alt="">
+                            <img class="icon-active" src="./public/img/process-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">購買流程</span>
+                    </a>
+                </li>
+                <li class="d-lg-none">
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-login">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/login.svg" alt="">
+                            <img class="icon-active" src="./public/img/login-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員登入</span>
+                    </a>
+                </li>
+                <li class="d-lg-none">
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-signup">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/user.svg" alt="">
+                            <img class="icon-active" src="./public/img/user-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員註冊</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header_nav d-lg-block d-none">
+            <ul>
+                <li>
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-login">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/login.svg" alt="">
+                            <img class="icon-active" src="./public/img/login-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員登入</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header_nav_item" data-bs-toggle="modal" data-bs-target="#modal-signup">
+                        <div class="header_icon">
+                            <img class="icon-normal" src="./public/img/user.svg" alt="">
+                            <img class="icon-active" src="./public/img/user-active.svg" alt="">
+                        </div>
+                        <span class="header_nav_text">會員註冊</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header_menu d-lg-none">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="banner_border">
+                    <div class="banner_main">
+                        <img class="banner_bg" src="./public/img/banner.png" alt="">
+                        <div class="banner_text" data-aos="zoom-in" data-aos-duration="800">
+                            <img src="./public/img/banner-text.png" alt="">
+                        </div>
+                        <div class="banner_logo" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+                            <img src="./public/img/banner-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap mainContent">
+            <div class="mainbar">
+                <div class="mainContent_wrapper">
+                    <div class="mainContent_inner">
+                        <div class="title">
+                            <div class="title_icon">
+                                <img class="layer-1" src="./public/img/term-brightpurple.svg" alt="">
+                                <img class="layer-2" src="./public/img/term-brightpurple.svg" alt="">
+                                <img class="layer-3" src="./public/img/term-brightpurple.svg" alt="">
+                                <img class="layer-4" src="./public/img/term-neon.svg" alt="">
+                            </div>
+                            <div class="title_text">
+                                <p class="layer-1">會員條款</p>
+                                <p class="layer-2">會員條款</p>
+                                <p class="layer-3">會員條款</p>
+                                <h1 class="layer-4">會員條款</h1>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <p>
+                                淘寶運彩俱樂部註冊會員相關規則:如無法遵守請勿註冊，感恩!<br>
+                                1~未滿18歲請勿購買彩卷，參與地下賭博是非法行為，請勿以身試法。<br>
+                                2~註冊會員時請務必輸入正確的聯絡資料，方便本站跟會員的聯絡管道，【並不定時簡訊傳送優惠方案】。<br>
+                                3~會員一旦繳款後無論是使用實體ATM，網路ATM，臨櫃匯款或超商代碼繳款， 本站均不提供任何退款方式，會員在繳款前請務必謹慎考慮，避免造成不愉快。<br>
+                                4~本站所發佈的文章與資訊服務，僅供會員作參考用途，不鼓勵會員參與非法地下投注及非法賭博性之行為。 若您根據本站所提供的資訊，進行任何財務上，或投資與金融的行動，請自行負擔任何的風險及損失並與本官網無關， 亦不得就任何投資上有任何損失向本站及本站公司代表人，全體職員， 維護人員及其他關聯企業或網站負責人請求損害賠償，會員請謹慎決定與審慎考量。<br>
+                                5~過去成績不保證未來的績效，本站所提供的資訊僅讓會員參考與分享，歡迎大家一起分享相關運動資訊與最新消息!
+                            </p>
+                            <button class="btn-common btn-back">
+                                <span>回上頁</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="row">
+                    <div class="col-lg-12 col-md-4">
+                        <div class="sidebar_item sidebar_qrcode">
+                            <img src="./public/img/line.jpg" alt="">
+                            <p>taobao2018777</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-4">
+                        <div class="sidebar_item">
+                            <img src="./public/img/ad.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Copyright © 2025 淘寶運動分析網 all rights reserved.
+    </footer>
+
+    <div class="modal fade modal-member" id="modal-login" tabindex="-1" aria-labelledby="modal-loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content_inner">
+                    <div class="modal-body">
+                        <button class="modal-member_x" data-bs-dismiss="modal">
+                            <div class="modal-member_x_inner">
+                                <img src="./public/img/x.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="title">
+                            <div class="title_icon">
+                                <img class="layer-1" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-2" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-3" src="./public/img/login-brightpurple.svg" alt="">
+                                <img class="layer-4" src="./public/img/login-neon.svg" alt="">
+                            </div>
+                            <div class="title_text">
+                                <p class="layer-1">會員登入</p>
+                                <p class="layer-2">會員登入</p>
+                                <p class="layer-3">會員登入</p>
+                                <h1 class="layer-4">會員登入</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="帳號">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="密碼">
+                            </div>
+                        </div>
+                        <button class="btn-common">
+                            <span>登入</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-member" id="modal-signup" tabindex="-1" aria-labelledby="modal-signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content_inner">
+                    <div class="modal-body">
+                        <button class="modal-member_x" data-bs-dismiss="modal">
+                            <div class="modal-member_x_inner">
+                                <img src="./public/img/x.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="title">
+                            <div class="title_icon">
+                                <img class="layer-1" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-2" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-3" src="./public/img/user-brightpurple.svg" alt="">
+                                <img class="layer-4" src="./public/img/user-neon.svg" alt="">
+                            </div>
+                            <div class="title_text">
+                                <p class="layer-1">會員註冊</p>
+                                <p class="layer-2">會員註冊</p>
+                                <p class="layer-3">會員註冊</p>
+                                <h1 class="layer-4">會員註冊</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="會員帳號">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="會員密碼">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="密碼確認">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="會員暱稱">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="email" placeholder="會員信箱">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="聯絡電話">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="LINE ID">
+                            </div>
+                            <div class="modal-member_checkbox">
+                                <input type="checkbox" id="consent">
+                                <label for="consent">同意<a href="./term.html">會員條款</a></label>
+                            </div>
+                        </div>
+                        <button class="btn-common">
+                            <span>註冊</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+
+</body>
+</html>
