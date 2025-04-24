@@ -706,6 +706,9 @@ main {
   .table-common_result {
     width: 25px;
   }
+  .table-common .table_score {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {

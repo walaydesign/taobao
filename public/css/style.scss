@@ -587,6 +587,9 @@ main {
         &_result {
             width: 25px;
         }
+        .table_score {
+            display: none;
+        }
     }
     @media screen and (max-width: 767px) {
         &-news {
