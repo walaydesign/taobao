@@ -549,6 +549,10 @@ main {
   color: #fff;
 }
 
+.sidebar_ad > img {
+  border-radius: 10px;
+}
+
 .sidebar_news {
   position: relative;
   padding: 25px 20px 20px;
@@ -557,7 +561,7 @@ main {
 .sidebar_news_title {
   width: 156px;
   height: 36px;
-  background-image: url(../img/news-title.png);
+  background-image: url(../img/news-title.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
